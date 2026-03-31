@@ -1,10 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AboutComponent } from "../about/about.component";
+import { SkillsComponent } from "../skills/skills.component";
+import { ProjectsComponent } from "../projects/projects.component";
+import { ContactComponent } from "../contact/contact.component";
 
 @Component({
   selector: 'app-home',
-  imports:[RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

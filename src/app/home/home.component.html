@@ -21,60 +21,11 @@
 
     <div class="hero-glow"></div>
   </section>
-
-  <!-- ABOUT -->
-  <section class="about container">
-    <div class="about-box">
-      <h2>About Me</h2>
-      <p>
-        With 10+ years of experience, I specialize in crafting powerful,
-        ATS-friendly CVs tailored for Dubai, Gulf, and European markets.
-        Every CV is designed to highlight your strengths and maximize your
-        chances of landing interviews.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills">
-    <div class="container">
-      <h2>Core Expertise</h2>
-
-      <div class="grid">
-        <div class="card" *ngFor="let skill of skills">
-          <h4>{{skill.name}}</h4>
-          <p>{{skill.description}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services container">
-    <h2>Services</h2>
-
-    <div class="grid">
-      <div class="card glass" *ngFor="let service of services">
-        <h4>{{service.title}}</h4>
-        <p>{{service.description}}</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE -->
-  <section class="why">
-    <div class="container">
-      <h2>Why Choose Me</h2>
-
-      <div class="grid">
-        <div class="card highlight" *ngFor="let reason of whyChooseUs">
-          <h4>{{reason.title}}</h4>
-          <p>{{reason.description}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    <app-about></app-about>
+    <app-skills></app-skills>
+    <app-projects></app-projects>
+    <app-contact></app-contact>
+  
   <!-- CTA -->
   <section class="cta">
     <div class="container text-center">

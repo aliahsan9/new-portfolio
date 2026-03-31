@@ -2,6 +2,7 @@
   font-family: 'Poppins', sans-serif;
   background: #0b1220;
   color: #e6edf3;
+  overflow: hidden;
 
   h1, h2, h4 {
     font-weight: 600;
@@ -91,56 +92,6 @@
       background: #facc15;
       color: #000;
     }
-  }
-
-  /* ABOUT */
-  .about-box {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    background: #111827;
-    padding: 40px;
-    border-radius: 20px;
-  }
-
-  /* GRID */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-  }
-
-  /* CARDS */
-  .card {
-    padding: 25px;
-    border-radius: 16px;
-    background: #111827;
-    transition: 0.3s;
-
-    h4 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #9ca3af;
-      font-size: 14px;
-    }
-
-    &:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    }
-  }
-
-  /* GLASS EFFECT */
-  .glass {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-  }
-
-  /* HIGHLIGHT CARDS */
-  .highlight {
-    border: 1px solid rgba(250,204,21,0.2);
   }
 
   /* CTA */
