@@ -10,10 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ContactComponent {
 
-  email: string = 'your@email.com';
-  phone: string = '+92 300 1234567';
-  whatsapp: string = '+923001234567';
-  address: string = 'Multan, Punjab, Pakistan';
+  email: string = 'professionalcv71@gmail.com';
+  whatsapp: string = '+971 55 351 6360';
+  address: string = 'Dubai, UAE';
 
   socials = {
     facebook: 'https://facebook.com/',
