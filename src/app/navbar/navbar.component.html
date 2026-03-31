@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink="/">
+      CV Master <span>Pro</span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+      <ul class="navbar-nav align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">
+            About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/skills" routerLinkActive="active">
+            Skills
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active">
+            Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">
+            Contact
+          </a>
+        </li>
+
+        <!-- CTA -->
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-main w-100 w-lg-auto">
+            Get Started
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>

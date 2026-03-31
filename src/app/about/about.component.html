@@ -1,0 +1,67 @@
+<!-- ABOUT PAGE CONTAINER -->
+<div class="about-page text-light">
+
+  <!-- HERO / TITLE SECTION -->
+  <section class="hero-about d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">About Me</h1>
+      <p class="lead mb-4">Professional CV & Resume Writer with 10+ Years of Experience</p>
+      <a routerLink="/contact" class="btn btn-warning btn-lg shadow-lg">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL SUMMARY SECTION -->
+  <section class="summary py-5 bg-dark-blue">
+    <div class="container">
+      <h2 class="text-center mb-4">Professional Summary</h2>
+      <p class="text-center lead">
+        I am a highly experienced CV Maker with over 10 years of professional experience in creating modern, ATS-friendly, and European-style CVs. 
+        I specialize in designing CVs for candidates applying in Dubai, Gulf countries, and European markets, ensuring compliance with international standards and employer expectations.
+      </p>
+      <p class="text-center lead">
+        My expertise covers multiple industries including driving, administration, technical, and customer service roles. Each CV is carefully tailored to highlight the candidate’s strengths, skills, and achievements in a clear and professional format.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & SKILLS SECTION -->
+  <section class="experience py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Expertise & Skills</h2>
+      <div class="row g-4 justify-content-center">
+
+        <!-- EXPERIENCE CARD -->
+        <div class="col-md-4 col-sm-6 card-experience" *ngFor="let exp of experience">
+          <div class="card shadow-lg h-100 p-4 text-center">
+            <h5 class="mb-3">{{exp.title}}</h5>
+            <p>{{exp.description}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES SERVED -->
+  <section class="industries py-5 bg-dark-blue">
+    <div class="container">
+      <h2 class="text-center mb-4">Industries Served</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3 col-sm-6 industry-card" *ngFor="let industry of industries">
+          <div class="card text-light bg-primary shadow-lg h-100 p-3 text-center">
+            <h5 class="mb-3">{{industry.name}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Ready to Land Your Dream Job?</h2>
+      <a routerLink="/contact" class="btn btn-warning btn-lg shadow-lg">Contact Me Now</a>
+    </div>
+  </section>
+
+</div>

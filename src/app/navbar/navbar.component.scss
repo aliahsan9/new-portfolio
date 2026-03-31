@@ -1,0 +1,96 @@
+.custom-navbar {
+  background-color: #0d1b2a;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background-color: #0a1624;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+
+    span {
+      color: #ffc107;
+    }
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .nav-link {
+    color: #cfd8dc;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    /* Smooth underline */
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0%;
+      height: 2px;
+      background-color: #ffc107;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+
+  /* CTA Button */
+  .btn-main {
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 25px;
+    padding: 6px 18px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #ffb300;
+      transform: translateY(-2px);
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+/* Mobile Fix */
+@media (max-width: 991px) {
+  .custom-navbar {
+
+    .nav-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .nav-link::after {
+      display: none;
+    }
+  }
+}
