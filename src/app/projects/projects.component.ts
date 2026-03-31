@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-/* ✅ Interface */
+/* Interface */
 interface Project {
   title: string;
   category: string;
@@ -24,27 +24,27 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Driver CV',
       category: 'Driving',
-      image: 'assets/projects/cv1.jpg'
+      image: 'assets/projects/cv1.webp'
     },
     {
       title: 'Office Admin CV',
       category: 'Administration',
-      image: 'assets/projects/cv2.jpg'
+      image: 'assets/projects/cv2.webp'
     },
     {
       title: 'IT Professional CV',
       category: 'IT',
-      image: 'assets/projects/cv3.jpg'
+      image: 'assets/projects/cv3.webp'
     },
     {
       title: 'Customer Service CV',
       category: 'Customer Service',
-      image: 'assets/projects/cv4.jpg'
+      image: 'assets/projects/cv4.webp'
     },
     {
       title: 'Engineer CV',
       category: 'Technical',
-      image: 'assets/projects/cv5.jpg'
+      image: 'assets/projects/cv5.webp'
     }
   ];
 
