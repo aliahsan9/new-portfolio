@@ -1,60 +1,103 @@
 <section class="ats-section py-5">
   <div class="container">
 
-    <!-- Header -->
+    <!-- HEADER -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold">ATS-Friendly Resume Optimization</h2>
-      <p class="text-muted">
-        We craft resumes that pass Applicant Tracking Systems and impress recruiters.
+      <h2 class="fw-bold gradient-text">ATS Optimization That Gets You Hired</h2>
+      <p class="text-light">
+        Beat the bots. Impress recruiters. Land interviews faster.
       </p>
     </div>
 
-    <!-- Content Row -->
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
 
-      <!-- LEFT CONTENT -->
+      <!-- LEFT -->
       <div class="col-lg-6">
+
         <div class="ats-content">
 
-          <h3 class="mb-3">Why ATS Matters?</h3>
+          <h3>🚀 Why ATS Matters?</h3>
+
           <p>
-            Over 90% of companies use Applicant Tracking Systems (ATS) to filter resumes.
-            If your CV is not optimized, it may never reach human eyes.
+            Most resumes never reach recruiters. Our ATS optimization ensures
+            your CV passes automated filters and ranks higher.
           </p>
 
-          <ul class="list-unstyled mt-4">
-            <li><i class="bi bi-check-circle-fill text-success"></i> Keyword Optimization</li>
-            <li><i class="bi bi-check-circle-fill text-success"></i> ATS-Compatible Formatting</li>
-            <li><i class="bi bi-check-circle-fill text-success"></i> Clean & Professional Layout</li>
-            <li><i class="bi bi-check-circle-fill text-success"></i> Recruiter-Friendly Structure</li>
-          </ul>
+          <!-- ATS SCORE -->
+          <div class="score-box mt-4">
+            <div class="d-flex justify-content-between">
+              <span>ATS Score</span>
+              <strong>{{score}}%</strong>
+            </div>
 
-          <button routerLink="/contact" class="btn btn-primary mt-4 px-4 py-2 shadow">
-            Get Your Resume Optimized
+            <div class="progress mt-2">
+              <div 
+                class="progress-bar"
+                [style.width.%]="score">
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURES -->
+          <div class="features mt-4">
+            <div 
+              class="feature-item"
+              *ngFor="let feature of features"
+              (mouseenter)="selectFeature(feature)">
+
+              <i [class]="feature.icon"></i>
+              <span>{{ feature.title }}</span>
+            </div>
+          </div>
+
+          <button routerLink="/contact" class="btn btn-gradient mt-4">
+            Optimize My Resume →
           </button>
+
         </div>
+
       </div>
 
-      <!-- RIGHT IMAGES -->
+      <!-- RIGHT -->
       <div class="col-lg-6 text-center">
-        <div class="ats-images">
-          <img src="assets/images/ats-1.png" alt="ATS Resume Scan" class="img-fluid main-img shadow">
-          <img src="assets/images/ats-2.png" alt="ATS Keywords" class="img-fluid overlay-img shadow">
+
+        <div class="image-wrapper">
+
+          <img 
+            src="assets/images/ats1.webp" 
+            class="img-fluid main-img"
+            alt="ATS Scan">
+
+          <img 
+            src="assets/images/ats2.webp" 
+            class="img-fluid floating-img"
+            alt="ATS Keywords">
+
+          <!-- FLOATING CARD -->
+          <div class="floating-card shadow">
+            <small>Resume Match</small>
+            <h5>{{score}}% Match</h5>
+          </div>
+
         </div>
+
       </div>
 
     </div>
 
-    <!-- FEATURES CARDS -->
-    <div class="row mt-5">
+    <!-- CARDS -->
+    <div class="row mt-5 g-4">
 
       <div class="col-md-4" *ngFor="let feature of features">
-        <div class="card ats-card text-center p-4 h-100">
+        <div class="ats-card h-100 text-center p-4">
+
           <div class="icon mb-3">
             <i [class]="feature.icon"></i>
           </div>
-          <h5 class="fw-bold">{{ feature.title }}</h5>
-          <p class="text-muted">{{ feature.description }}</p>
+
+          <h5>{{ feature.title }}</h5>
+          <p>{{ feature.description }}</p>
+
         </div>
       </div>
 

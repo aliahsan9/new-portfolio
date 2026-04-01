@@ -10,22 +10,34 @@ import { RouterModule } from '@angular/router';
 })
 export class AtsComponent {
 
+  score = 65;
+
   features = [
     {
       icon: 'bi bi-search',
-      title: 'Keyword Matching',
-      description: 'We analyze job descriptions and optimize your resume with relevant keywords.'
+      title: 'Keyword Optimization',
+      description: 'We match your resume with job-specific keywords.'
     },
     {
       icon: 'bi bi-file-earmark-text',
       title: 'ATS Formatting',
-      description: 'Clean layouts ensuring compatibility with all ATS software.'
+      description: 'Clean and ATS-friendly structure.'
     },
     {
       icon: 'bi bi-graph-up-arrow',
       title: 'Higher Ranking',
-      description: 'Boost your chances of getting shortlisted by recruiters.'
+      description: 'Improve your ranking in ATS systems.'
+    },
+    {
+      icon: 'bi bi-person-check',
+      title: 'Recruiter Appeal',
+      description: 'Make your CV appealing to humans too.'
     }
   ];
+
+  selectFeature(feature: any) {
+    // Simulate ATS score change (interactive feel)
+    this.score = Math.floor(Math.random() * 30) + 70;
+  }
 
 }
